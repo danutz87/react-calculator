@@ -116,8 +116,8 @@ class App extends Component {
       <div className="container">
         <Display equation={this.state.equation} display={this.state.display} />
         <Button id="clear" value="clear" display="AC" class="row-3 col-1" click={this.clearInput} />
-        <Button id="sign" value="+/-" display="±" class="row-3 col-2" />
-        <Button id="percent" value="%" display="%" class="row-3 col-3" />
+        <Button id="sign" value="+/-" display="±" class="row-3 col-2" click={this.numInput} />
+        <Button id="percent" value="%" display="%" class="row-3 col-3" click={this.numInput} />
         <Button id="divide" value="/" display="÷" class="oper row-3 col-4" click={this.operInput} />
         <Button id="seven" value="7" display="7" class="num row-4 col-1" click={this.numInput} />
         <Button id="eight" value="8" display="8" class="num row-4 col-2" click={this.numInput} />
